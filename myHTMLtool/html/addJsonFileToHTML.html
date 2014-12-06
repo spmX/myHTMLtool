@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Add .json file to HTML object.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for addJsonFileToHTML {myHTMLtool}"><tr><td>addJsonFileToHTML {myHTMLtool}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>Add .json file to HTML object.</h2>
+
+<h3>Description</h3>
+
+<p>Add data table stored in .json format to the HTML object.
+Based on the data stored in .json file, a customed javascript
+will also be created and inserted into the &lt;head/&gt; node of HTML object.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+addJsonFileToHTML(jsonFilePath, htmlObj, fieldnames, customFilter = NULL,
+  tableParentNode = NULL)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>jsonFilePath</code></td>
+<td>
+<p>Path to the .json file</p>
+</td></tr>
+<tr valign="top"><td><code>htmlObj</code></td>
+<td>
+<p>A html object returned by initHTML()
+#</p>
+</td></tr>
+<tr valign="top"><td><code>fieldnames</code></td>
+<td>
+<p>The fieldnames(colnames) of the data table stored in .json file
+#</p>
+</td></tr>
+<tr valign="top"><td><code>customFilter</code></td>
+<td>
+<p>A user-defined criteria to add individual column filtering in
+# the HTML table created by DataTables plugin.See Details.
+#
+#</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>When customFilter is set to &quot;auto&quot;,it automatically add column filters
+# based the data type of each col.if a column contains characters, it's column filter
+# will be &quot;search&quot;; if a column contains  numbers,it's column filter will be &quot;number-range&quot;;
+# User can also specify which specific column(s) need to be filter.
+# For instance, if user needs col4 of a five-column table to be filtered by keyword search,
+# simply set the 4th column to &quot;search&quot;, and the rest of cols to &quot;null&quot;:
+#
+#
+</p>
+
+
+<h3>Value</h3>
+
+<p>a .html file containing the javascript required to load the table stored in .json file
+#
+#
+</p>
+
+<hr><div align="center">[Package <em>myHTMLtool</em> version 0.2 <a href="00Index.html">Index</a>]</div>
+</body></html>

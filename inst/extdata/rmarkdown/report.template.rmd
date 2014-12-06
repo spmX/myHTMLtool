@@ -1,0 +1,52 @@
+
+# Introduction
+
+Add the content of introduction here
+
+...
+
+# Material and Method
+
+Add the content of material and method here
+
+...
+
+The protocol might involve multiple steps, such as:
+
+- Step 1
+- Step 2
+- Step 3
+- Step 4
+- Step 5
+
+
+# Results
+
+Add the content of results here
+
+If you want to insert a figure, add the following html tag:
+
+<div id="myfigure1"></div>
+
+
+If you want to insert a data table here, add the following html tag:
+
+<div id="mytable1"></div>
+
+You can add another table as well:
+
+<div id="mytable2"></div>
+
+(Noted that you can change the id of table/figure to any strings you like, just make sure that
+each table and figure has a unique id. Also remember to supply the id to ``` addDataFrameToHTML()``` function and
+``` addFigureToHTML()``` function.)
+
+# Discussion
+
+Add the content of discussion here 
+
+...
+
+
+# Reference
+

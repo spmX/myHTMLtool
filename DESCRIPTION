@@ -1,0 +1,11 @@
+Package: myHTMLtool
+Type: Package
+Title: Tool for creating HTML report
+Version: 0.3.0
+Date: 2014-10-22
+Author: LUTING ZHUO and XIN GUO
+Imports:
+    XML,rjson,knitr
+Maintainer: LUTING ZHUO <lzhuo01@gilead.com>
+Description: Tool for creating HTML report with large data table
+License: GPL (>= 2)

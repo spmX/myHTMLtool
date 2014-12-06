@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Add data frame to HTML object.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for addDataFrameToHTML {myHTMLtool}"><tr><td>addDataFrameToHTML {myHTMLtool}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>Add data frame to HTML object.</h2>
+
+<h3>Description</h3>
+
+<p>Convert a table data frame to a javascript object and create a .html file capable to loading the .json file
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+addDataFrameToHTML(dataframe, htmlObj, customFilter = "auto",
+  fieldnames = NULL, tableParentNode = NULL)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>dataframe</code></td>
+<td>
+<p>The data frame containing the table to be added to the output .html file</p>
+</td></tr>
+<tr valign="top"><td><code>htmlObj</code></td>
+<td>
+<p>A html object returned by initHTML()</p>
+</td></tr>
+<tr valign="top"><td><code>customFilter</code></td>
+<td>
+<p>A user-defined criteria to add individual column filtering in the HTML table created by DataTables plugin.See Details.</p>
+</td></tr>
+<tr valign="top"><td><code>fieldnames</code></td>
+<td>
+<p>The fieldnames(colnames) of the data table stored in .json file</p>
+</td></tr>
+<tr valign="top"><td><code>tableParentNode</code></td>
+<td>
+<p>XMLInternalNode allow user to specify which node the table will be added to.</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>When customFilter is set to &quot;auto&quot;,it automatically create individual column filters
+based on data type of each col. For instance, if a column contains characters, it's column filter
+will be a search box; if a column contains  numbers,it's column filter will be range filter;
+User can also specify which specific column(s) need to be filter.
+For instance, if user needs col4 of a five-column table to be filtered by keyword search,
+simply set the 4th column to &quot;search&quot;, and the rest of cols to &quot;null&quot;:
+customFilter = c(&quot;null&quot;,&quot;null&quot;,&quot;null&quot;,&quot;search&quot;,&quot;null&quot;)
+The output of this function is a .html file, along with required css and javascript library, as well as
+a data folder containing the .json file. User can copy the whole output folder to the web server to open the .html file.
+</p>
+
+
+<h3>Value</h3>
+
+<p>a .html file containing the customed javascript required for loading the table stored in .json file
+</p>
+
+<hr><div align="center">[Package <em>myHTMLtool</em> version 0.2 <a href="00Index.html">Index</a>]</div>
+</body></html>

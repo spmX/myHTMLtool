@@ -1,0 +1,16 @@
+addDataFrameToHTML      Add data frame to HTML object.
+addJsonFileToHTML       Add .json file to HTML object.
+addReportTemplate       Add report template to htmlObj
+convertToJson           convert input to a javascript object(json)
+createScriptNode        create a javascript node
+createTableNodes        Create a Table node
+createVarColTypes       create a java script array to store col types
+createVarCols           create a cols variable
+dfToCustomFilter        Create individual column filters based on data
+                        frame
+headings2Node           convert report headings to XML node
+img2Node                convert an image to an XML node
+initHTML                initate an html object
+myHTMLtool              Generate a HTML file containing data table
+myHTMLtool-package      What the package does (short line)
+publishHTML             Create .html file

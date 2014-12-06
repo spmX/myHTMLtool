@@ -1,0 +1,376 @@
+/*
+ * Colour dictionary:
+ *
+ * Table control elements:   #719ba7
+ * Header cells:             #66A9BD
+ * Body header cells:        #91c5d4
+ * Body content cells:       #d5eaf0
+ * Body content cells (alt): #bcd9e1
+ * Footer header:            #b0cc7f
+ * Footer content:           #d7e1c5
+ */
+
+
+/*
+ * Page setup styles
+ */
+body {
+	font: 80%/1.45em Arial, Verdana, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #111;
+	background-color: #fff;
+	
+}
+
+div.table_container {
+	margin: 0 auto;
+	width: 1000px
+}
+
+
+/*
+ * DataTables framework
+ */
+div.dataTables_wrapper {
+
+
+}
+
+div.dataTables_length {
+
+}
+
+div.dataTables_filter {
+	float: right;
+}
+
+div.dataTables_info {
+	padding: 9px 6px 6px 6px;
+	float: left;
+}
+
+div.dataTables_paginate {
+	float: right;
+}
+
+div.dataTables_length,
+div.dataTables_filter,
+div.dataTables_paginate {
+	padding: 6px;
+}
+
+/* Self clearing - http://www.webtoolkit.info/css-clearfix.html */
+.dataTables_wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+html[xmlns] .dataTables_wrapper {
+	display: block;
+}
+ 
+* html .dataTables_wrapper {
+	height: 1%;
+}
+
+
+/*
+ * Table styles
+ */
+ 
+table.display thead  {
+
+}
+
+table.display {
+	width: 100%;
+	clear: both;
+}
+
+table.display td,
+table.display th {
+	padding: 5px;
+	border: 1px solid #fff;
+}
+
+/* Header cells */
+table.display thead th {
+	text-align: center;
+	min-width: 88px;
+
+}
+
+/* Body cells */
+table.display  tbody th  {
+	text-align: center;
+
+}
+	
+table.display tbody td {
+	text-align: center;
+
+}
+		
+table.display tbody tr.odd td { 
+
+}
+
+
+/*
+ * Pagination
+ */
+a.paginate_button,
+a.paginate_active {
+	display: inline-block;
+	background-color: #608995;
+	padding: 2px 6px;
+	margin-left: 2px;
+	cursor: pointer;
+	*cursor: hand;
+}
+
+a.paginate_active {
+	background-color: transparent;
+	border: 1px solid black;
+}
+
+a.paginate_button_disabled {
+	color: #3d6672;
+}
+.paging_full_numbers a:active {
+	outline: none
+}
+.paging_full_numbers a:hover {
+	text-decoration: none;
+}
+
+div.dataTables_paginate span>a {
+	width: 15px;
+	text-align: center;
+}
+
+
+/*
+ * Sorting
+ */
+table.display thead th.sorting_asc {
+
+}
+
+table.display thead th.sorting_desc {
+
+}
+
+table.display thead th.sorting {
+
+}
+
+
+/*
+ * minmax formatting 
+ */
+
+/* any input box: size of text */
+/* line-height and height are to center the text */
+
+ 
+/* from-to box: size of the input boxes */
+input.number_range_filter, input.text_filter  { 
+	text-align:center;
+	background: white; 
+    border: 1px solid #DDD; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px #DDD inset; 
+    color: #666; 
+    outline: none; 
+	height:25px;
+}
+input.number_range_filter {
+	width:50px;
+}
+input.text_filter {
+	width:100px;
+}
+
+
+/*from-to box: input label text */
+/*add min-width so that the from-to boxes don't wrap */
+/*added border to make the line continuous*/
+/*surrounding this column */
+/* any input box: size of text */
+/* line-height and height are to center the text */
+.form-inline input {
+    font-size: 8pt;
+    text-align: center;
+    padding-left: 2px; 
+    padding-right: 2px;
+    line-height: 100%; 
+    height: 2.5em; 
+}
+/* copied from Xin Guo */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+html, body { 
+  padding: 0; 
+	margin: 0;
+	border: 0;
+	font-family:"Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+  font-size: 14pt;
+  background-color: #ffffff;
+  text-align: justify;
+}
+
+.wrap {
+	min-height: 100%;
+	position: relative;
+}
+
+p {
+	text-indent: 4px;
+	margin: 8px;
+}
+
+.title {
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 120px;
+	background: #ddd;
+	color: #BB3F2F;
+	font-weight: 900;
+	border-bottom: 2px solid #666;
+	border-top: 2px solid #666;
+	margin: 20px 30px 0px 30px; 
+	text-align: center;
+	font-size: 20px;
+}
+
+ul {
+	line-height: 20px;
+}
+
+ul.tocsection {
+	font-size: 18px;
+	list-style-type: circle;
+	color: #222;
+	text-align: justify;
+	margin-left: 30px;
+}
+
+ol.tocsection {
+	font-size: 18px;
+	font-weight: bold;
+	color: #222;
+	text-align: justify;
+	list-style-type: decimal;
+	margin-left: 30px;
+}
+
+ul.todoc {
+	font-size: 14px;
+	line-height: 20px;
+	list-style-type: circle;
+	color: #222;
+	text-align: justify;
+	margin-left: 30px;
+}
+
+ol.todoc {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #222;
+	text-align: justify;
+	list-style-type: decimal;
+	margin-left: 30px;
+}
+
+.sub {
+	border-bottom: 2px dotted #999;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: #045A8D;
+	font-weight: 700;
+}
+
+a:visited {
+	color: #137;
+}
+
+a:hover {
+	background: #D1E5F0;
+}
+
+.footer {
+	display: block;
+	margin: 40px 30px 0 30px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	overflow: hidden;
+	border-top: 2px solid #666;
+	text-align: center;
+	background: #ddd;
+	color: #666;
+	font-size: 12px;
+	font-style: italic;
+}
+
+#warning {
+	border: 1px solid #222;
+	background: #e5e7e9;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px auto 0;
+	max-width: 800px;
+	min-width: 400px;
+	padding: 8px;
+	font-size: 1em;
+	color : #4d4d4d;
+}
+
+.section {
+	margin-top: 15px;
+	margin-bottom: 20px;
+	margin-right: 30px;
+	max-width: 1000px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.highlight {
+	font-size: 1.1em;
+	font-weight: bold;
+	padding-right: 10px;
+}
+
+.term {
+	font-style: italic;
+	font-weight: 600;
+}
+
+li {
+	line-height: 20px;
+}
+
+.imgdiv {
+	padding: 5px 40px;
+}
+
+img {
+	border: 4px solid #ccc;
+}
+
+
+
+
